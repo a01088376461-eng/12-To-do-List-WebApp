@@ -1,0 +1,118 @@
+/* 전체 페이지 배경과 가운데 정렬 */
+body {
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  background-color: #f4f6f9;
+  color: #222222;
+  margin: 0;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 제목과 안내 문구 */
+#title {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+#message {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: #64748b;
+}
+
+/* 입력창과 추가 버튼 */
+#todoInput {
+  width: 240px;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+#todoInput:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* 전체 / 완료 개수 표시 영역 */
+#todoCount {
+  width: 340px;
+  margin: 16px 0 12px 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #334155;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* 할 일 목록(ul)과 각 항목(li) 카드 스타일 */
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 340px;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* 할 일 텍스트 */
+.todo-text {
+  cursor: pointer;
+  font-size: 15px;
+  flex: 1;
+  margin-right: 10px;
+  word-break: break-all;
+}
+
+.todo-text:hover {
+  color: #3b82f6;
+}
+
+/* 완료된 할 일 스타일 */
+.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
